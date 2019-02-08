@@ -50,6 +50,9 @@ export default class ApiManager {
   static postSparkLaunch (args) {
     return axios.post(opvSt + 'spark/launch', args)
   }
+  static postCeleryLaunch (args) {
+    return axios.post(opvSt + 'celery/launch', args)
+  }
   static getSparkPort () {
     return axios.get(opvSt + 'spark/port')
   }

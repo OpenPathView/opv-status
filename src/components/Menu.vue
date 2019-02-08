@@ -22,6 +22,7 @@ export default {
       inputs: [
         {name: 'Import data', link: 'ImportCampaign'},
         {name: 'Spark', link: 'Spark'},
+        {name: 'Celery', link: 'Celery'},
         {name: 'List', link: 'CampaignList'},
         {name: 'Virtual tour viewer', link: 'VirtualTourViewer'}
       ]

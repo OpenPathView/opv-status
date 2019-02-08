@@ -120,21 +120,21 @@ export default {
     showLog () {
       var args = '{}'
       if (this.$refs.logFile.$refs.input.value !== '') {
-        args = JSON.stringify({'logFile': this.$refs.logFile.$refs.input.value})
+        args = {'logFile': this.$refs.logFile.$refs.input.value}
       }
       ApiManager.postImportLog(args).then(answer => {
         this.log = answer.data.answer
       })
     },
     launch () {
-      var args = JSON.stringify({
+      var args = {
         'path': this.$refs.campaignDir.$refs.input.value,
         'id_malette': this.$refs.idMalette.$refs.input.value,
         'id_rederbro': this.$refs.idRederbro.$refs.input.value,
         'camera_number': this.$refs.cameraNB.$refs.input.value,
         'description': this.$refs.description.$refs.input.value,
         'campaign_name': this.$refs.campaignName.$refs.input.value
-      })
+      }
 
       ApiManager.postImportLaunch(args).then(answer => {
         this.scan()
