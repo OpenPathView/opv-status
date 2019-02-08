@@ -123,7 +123,6 @@ export default {
       if (this.$refs.customLaunchScript.$refs.input.value !== '') {
         args.customLaunchScript = this.$refs.customLaunchScript.$refs.input.value
       }
-      args = JSON.stringify(args)
       ApiManager.postSparkLaunch(args).then(answer => {
         this.answer = answer.data.answer
         this.startScan()
