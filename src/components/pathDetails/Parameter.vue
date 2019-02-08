@@ -52,16 +52,16 @@ export default {
       delete this.$parent.$parent.$parent.pathDetails.id_path_details
       delete this.$parent.$parent.$parent.pathDetails.id_malette
       this.$parent.$parent.$parent.pathDetails.name = this.$refs.newName.$refs.input.value
-      //debugger
+      // debugger
       apiManager.postPathDetails(this.$parent.$parent.$parent.pathDetails)
         .then((pathDetails) => {
-          //debugger
+          // debugger
           this.$parent.$parent.$parent.pathDetails = pathDetails.data
           this.$parent.$parent.$parent.save(false)
         })
     },
     deleteAll () {
-      //debugger
+      // debugger
       this.$parent.$parent.$parent.deleteOldOne(this.$parent.$parent.$parent.pathNode)
         .then(this.$parent.$parent.$parent.loadData)
     },

@@ -5,6 +5,7 @@ import Campaign from '@/components/campaign/Campaign'
 import PanoViewer from '@/components/PanoViewer'
 import ImportCampaign from '@/components/ImportCampaign'
 import Spark from '@/components/Spark'
+import Celery from '@/components/Celery'
 import PanoramaSelector from '@/components/panoramaSelector/PanoramaSelector'
 import PathDetailsViewer from '@/components/pathDetails/PathDetailsViewer'
 import PathDetailsEditor from '@/components/pathDetails/PathDetailsEditor'
@@ -49,6 +50,18 @@ export default new Router({
       props: false,
       name: 'Spark',
       component: Spark
+    },
+    {
+      path: '/celery/:id_campaign/:id_malette',
+      props: true,
+      name: 'CeleryValue',
+      component: Celery
+    },
+    {
+      path: '/celery/',
+      props: false,
+      name: 'Celery',
+      component: Celery
     },
     {
       path: '/panoramaSelector/:id_campaign/:id_malette',

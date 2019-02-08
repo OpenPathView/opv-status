@@ -4,7 +4,8 @@
     "api_port": 5000,
     "dm_port": 5050,
     "status_port": 5001,
-    "graph_port": 5015
+    "graph_port": 5015,
+    "flower_port": 5555
   },
   "picture": 6
 }

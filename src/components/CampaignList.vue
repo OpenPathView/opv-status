@@ -27,7 +27,10 @@
                         <v-btn color="primary">Global campaign view</v-btn>
                       </router-link>
                       <router-link class="mr-1" :to="{ name: 'SparkValue', params: { id_campaign: props.item.id_campaign, id_malette: props.item.id_malette}}">
-                        <v-btn color="primary">Stitch it</v-btn>
+                        <v-btn color="primary">Spark</v-btn>
+                      </router-link>
+                      <router-link class="mr-1" :to="{ name: 'CeleryValue', params: { id_campaign: props.item.id_campaign, id_malette: props.item.id_malette}}">
+                        <v-btn color="primary">Celery</v-btn>
                       </router-link>
                       <router-link class="mr-1" :to="{ name: 'PanoramaSelector', params: { id_campaign: props.item.id_campaign, id_malette: props.item.id_malette}}">
                         <v-btn color="primary">Panorama selection</v-btn>
