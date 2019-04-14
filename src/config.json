@@ -1,10 +1,9 @@
 {
-  "server": {
-    "host": "http://opv_master",
-    "api_port": 5000,
-    "dm_port": 5050,
-    "status_port": 5001,
-    "graph_port": 5015
-  },
-  "picture": 6
+    "picture": 6,
+    "server": {
+        "api": "http://dbrest:5000",
+        "status": "http://status:5050",
+        "dm": "http://dm:5050",
+        "graph": "http://graph:5015"
+    }
 }

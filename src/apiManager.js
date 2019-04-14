@@ -2,10 +2,10 @@ import axios from 'axios'
 import Config from '@/config.json'
 
 const opv = Config.server.host
-const opvApi = opv + ':' + Config.server.api_port + '/'
-const opvDb = opv + ':' + Config.server.dm_port + '/v1/files/'
-const opvSt = opv + ':' + Config.server.status_port + '/'
-const opvGraph = opv + ':' + Config.server.graph_port + '/'
+const opvApi = Config.server.api + '/'
+const opvDb = Config.server.dm + '/v1/files/'
+const opvSt = Config.server.status + '/'
+const opvGraph = Config.server.graph + '/'
 
 export default class ApiManager {
   static dirHttpPath (dmUuid) {
