@@ -54,7 +54,7 @@ export default {
   },
   data () {
     return {
-      picturesPath: Config.server.host + ':' + Config.server.dm_port + '/v1/files/',
+      picturesPath: Config.server.dm + '/v1/files/',
       panorama: null
     }
   },

@@ -1,9 +1,9 @@
 {
     "picture": 6,
     "server": {
-        "api": "http://dbrest:5000",
-        "status": "http://status:5050",
-        "dm": "http://dm:5050",
-        "graph": "http://graph:5015"
+        "api": "/api",
+        "status": "/status",
+        "dm": "/dm",
+        "graph": "/graph"
     }
 }

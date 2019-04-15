@@ -40,7 +40,7 @@ export default {
   data () {
     return {
       imgNb: Config.picture,
-      picturesPath: Config.server.host + ':' + Config.server.dm_port + '/v1/files/'
+      picturesPath: Config.server.dm + '/v1/files/'
     }
   },
   computed: {

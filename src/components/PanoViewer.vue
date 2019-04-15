@@ -39,7 +39,7 @@ export default {
             multiRes: {
               extension: answer.data.extension,
               tileResolution: answer.data.resolution,
-              basePath: 'http://dm:5050/v1/files/' + answer.data.param_location,
+              basePath: '/dm/v1/files/' + answer.data.param_location,
               cubeResolution: answer.data.cube_resolution,
               path: '/%l/%s%y_%x',
               maxLevel: answer.data.max_level
